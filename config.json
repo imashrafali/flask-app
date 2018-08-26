@@ -1,0 +1,19 @@
+{
+  "params":
+  {
+     "local_server": "True",
+     "local_uri": "mysql://root:@localhost/averageprogrammer",
+     "prod_uri": "mysql://root:@localhost/averageprogrammer",
+     "fb_url": "https://facebook.com/averageprogramr",
+     "tw_url": "https://twitter.com/averageprogramr",
+     "gh_url": "https://github.com/averageprogramr",
+     "blog_name": "Average programr",
+     "gmail_user": "averageprogrammerr@gmail.com",
+     "about-text": "Hi I am Ashraf i created this blog using the python flask frame work",
+     "no_of_posts": 5,
+     "login_image": "login.jpg",
+     "admin_user": "imashrafali",
+     "admin_password": "!Tj13is009"
+
+  }
+}
