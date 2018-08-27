@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request, session
+from flask import Flask,render_template,request, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
 import json
@@ -66,7 +66,7 @@ def Home():
     return render_template("index.html", params=params, posts = posts)
 
 
-@app.route("/login", methods = ['GET', 'POST'])
+@app.route("/dashboard", methods = ['GET', 'POST'])
 def login():
 
     #if the user is in the session
@@ -115,8 +115,19 @@ def edit(sno):
                 post = Posts(title=req_title, sub=tline, slug=slug, content=content, img_file=img_file, date=date)
                 db.session.add(post)
                 db.session.commit()
+            else:
+                post = Posts.query.filter_by(sno=sno).first()
+                post.title = req_title
+                post.sub = tline
+                post.slug = slug
+                post.content = content
+                post.img_file = img_file
+                post.date = date
+                db.session.commit()
+                return redirect('/edit/'+sno)
 
-        return render_template("edit.html", params=params, sno=sno)
+        post = Posts.query.filter_by(sno=sno).first()
+        return render_template("edit.html", params=params, post=post)
 
 
 
