@@ -66,7 +66,7 @@ def Home():
     return render_template("index.html", params=params, posts = posts)
 
 
-@app.route("/dashboard", methods = ['GET', 'POST'])
+@app.route("/login", methods = ['GET', 'POST'])
 def login():
 
     #if the user is in the session
