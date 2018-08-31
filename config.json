@@ -12,8 +12,8 @@
      "about-text": "Hi I am Ashraf, A self taught programmer, UI/UX Designer form bangalore, who is very much interested in gaming and creating programs to simplify the needs and automate stuff",
      "no_of_posts": 5,
      "login_image": "login.jpg",
-     "admin_user": "imashrafali",
-     "admin_password": "!Tj13is009",
+     "admin_user": "username",
+     "admin_password": "password",
      "upload_file" : "C:\\Users\\ashraf\\Desktop\\pythonprojects\\PycharmProjects\\blogflask\\static"
 
   }
