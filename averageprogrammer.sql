@@ -43,19 +43,19 @@ CREATE TABLE `contacts` (
 
 INSERT INTO `contacts` (`sno`, `Name`, `email`, `phone`, `msg`, `date`) VALUES
 (1, 'myfirstpost', 'myfirstpost@gmail.com', '1234567789', 'my first post', '2018-08-19 21:29:33'),
-(2, 'Ashraf ali', 'ashrafali1995ali@gmail.com', '8892163967', 'my first test ', NULL),
-(3, 'Ashraf ali', 'ashrafali1995ali@gmail.com', '8892163967', 'my first test ', '2018-08-19 22:05:18'),
-(4, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'adklashfasldfalsdj', '2018-08-20 12:34:35'),
-(5, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'adklashfasldfalsdj', '2018-08-20 12:38:24'),
-(6, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'adklashfasldfalsdj', '2018-08-20 12:40:08'),
-(7, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'adklashfasldfalsdj', '2018-08-20 12:44:14'),
-(8, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'adklashfasldfalsdj', '2018-08-20 12:46:06'),
-(9, 'Ashraf ali', 'ashrafali1995ali@gmail.com', '8892163967', 'hi this is test mail', '2018-08-20 12:53:31'),
-(10, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'ashrafaliaf', '2018-08-20 13:01:24'),
-(11, 'Ashraf ali', 'ashrafali1995ali@gmail.com', '8892163967', 'adhfdhodfhsd', '2018-08-20 13:04:41'),
-(12, 'Ashraf ali', 'mashrafa581@gmail.com', '8892163967', 'ashrafaliaf', '2018-08-20 13:06:02'),
-(13, 'mujeer', 'marela@gmail.com', '7204221447', 'hi bro nice website', '2018-08-23 14:31:05'),
-(14, 'Ashraf ali', 'ashrafali1995ali@gmail.com', '8892163967', '', '2018-08-25 11:25:35');
+(2, 'Ashraf ali', '1234@gmail.com', '1234432123', 'my first test ', NULL),
+(3, 'Ashraf ali', '143@gmail.com', '143224341341', 'my first test ', '2018-08-19 22:05:18'),
+(4, 'Ashraf ali', '1243@gmail.com', '43124314424', 'adklashfasldfalsdj', '2018-08-20 12:34:35'),
+(5, 'Ashraf ali', '1423@gmail.com', '143412342', 'adklashfasldfalsdj', '2018-08-20 12:38:24'),
+(6, 'Ashraf ali', '142@gmail.com', '14132421', 'adklashfasldfalsdj', '2018-08-20 12:40:08'),
+(7, 'Ashraf ali', '1423@gmail.com', '142311243', 'adklashfasldfalsdj', '2018-08-20 12:44:14'),
+(8, 'Ashraf ali', '1243@gmail.com', '123412412', 'adklashfasldfalsdj', '2018-08-20 12:46:06'),
+(9, 'Ashraf ali', '1234@gmail.com', '8892234147', 'hi this is test mail', '2018-08-20 12:53:31'),
+(10, 'Ashraf ali', '1234@gmail.com', '883423141', 'ashrafaliaf', '2018-08-20 13:01:24'),
+(11, 'Ashraf ali', '124@gmail.com', '88123412137', 'adhfdhodfhsd', '2018-08-20 13:04:41'),
+(12, 'Ashraf ali', '421@gmail.com', '1234131232', 'ashrafaliaf', '2018-08-20 13:06:02'),
+(13, 'mujeer', 'marela@1423.com', '2433421231', 'hi bro nice website', '2018-08-23 14:31:05'),
+(14, 'Ashraf ali', '1243@gmail.com', '1423134132241', '', '2018-08-25 11:25:35');
 
 -- --------------------------------------------------------
 
