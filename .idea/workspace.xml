@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07ebc670-fe3b-4856-8f56-3b162494038c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/clean-blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/clean-blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/contact-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/contact-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/home-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/login.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,20 +60,31 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="213" />
-          <entry key="py" value="245" />
+          <entry key="json" value="247" />
+          <entry key="py" value="1051" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="213" />
-          <entry key="Python" value="245" />
+          <entry key="JSON" value="247" />
+          <entry key="Python" value="1051" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -90,11 +94,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1209">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+            <state relative-caret-position="367">
+              <caret line="177" column="77" selection-start-line="177" selection-start-column="77" selection-end-line="177" selection-end-column="77" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
-                <marker date="1535428927889" expanded="true" signature="3229:4340" ph="..." />
+                <marker date="1535696356574" expanded="true" signature="4023:4377" ph="..." />
+                <marker date="1535696356574" expanded="true" signature="4833:5953" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="193" selection-start-line="11" selection-start-column="193" selection-end-line="11" selection-end-column="193" />
+            <state relative-caret-position="272">
+              <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -127,12 +132,12 @@
         <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/../firstgui/texteditor.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="50" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
@@ -326,27 +331,22 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/../firstgui/texteditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../firstgui/texteditor.py" />
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="193" selection-start-line="11" selection-start-column="193" selection-end-line="11" selection-end-column="193" />
+        <state relative-caret-position="272">
+          <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1209">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        <state relative-caret-position="367">
+          <caret line="177" column="77" selection-start-line="177" selection-start-column="77" selection-end-line="177" selection-end-column="77" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
-            <marker date="1535428927889" expanded="true" signature="3229:4340" ph="..." />
+            <marker date="1535696356574" expanded="true" signature="4023:4377" ph="..." />
+            <marker date="1535696356574" expanded="true" signature="4833:5953" ph="..." />
           </folding>
         </state>
       </provider>

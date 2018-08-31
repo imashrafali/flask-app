@@ -32,7 +32,7 @@
 
 <h1> ADD/ Edit posts</h1>
 
- <form name="sentMessage" id="contactForm" action = "/edit/{{post.sno}}" method="post" novalidate>
+ <form name="sentMessage" id="contactForm" action = "/edit/{{sno}}" method="post" novalidate>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Title</label>
@@ -65,7 +65,7 @@
 
              <div class="control-group">
               <div class="form-group floating-label-form-group controls">
-                <label>img_file</label>
+                               <label>img_file</label>
                 <input type="text" class="form-control" placeholder="Image" id="img_file" name="img_file">
                 <p class="help-block text-danger" value="{{post.img_file}}"></p>
               </div>

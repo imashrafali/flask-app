@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout1.html" %}
 {% block body %}
 
     <!-- Page Header -->
@@ -27,11 +27,12 @@
           
             <button type="button" class="btn btn-outline-dark"><a href="/edit/0">Add Newpost</a></button>
 
-            <button type="button" class="btn btn-outline-dark float-right">Logout</button>
+            <button type="button" class="btn btn-outline-dark float-right"><a href="/logout">Logout</a></button>
             <hr>
-         <form action="/uploader" method="post">
-          
-            <button type="button" class="btn btn-outline-dark"><input type="file"  name="file1">file uploader</button>
+         <form action="/uploader" method="post" enctype="multipart/form-data">
+             <input type="file"  name="file1">
+
+            <button type="Submit" class="btn btn-outline-dark">Submit</button>
           </form>
         <br/>
               
@@ -56,7 +57,7 @@
       <td>{{post.title}}</td>
       <td>{{post.date}}</td>
       <td><a href="/edit/{{post.sno}}"><button type="button" class="btn btn-dark">Edit</button></a></td>
-      <td><button type="button" class="btn btn-dark">Delete</button></td>
+      <td><a href="/delete/{{post.sno}}"><button type="button" class="btn btn-dark">Delete</button></a></td>
       
     </tr>
     

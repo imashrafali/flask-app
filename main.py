@@ -1,7 +1,10 @@
 from flask import Flask,render_template,request, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
+from werkzeug import secure_filename
+import os
 import json
+import math
 from datetime import datetime
 
 #The below json function is use to store values that can be changed by user'"
@@ -11,8 +14,9 @@ with open('config.json', 'r') as c:
     params = json.load(c)["params"]
 local_server = True
 app = Flask(__name__)
-app.secret_key = 'super-secret-key'
 
+app.config['UPLOAD_FOLDER']= params['upload_file']
+app.secret_key = 'super-secret-key'
 #The Below function mail is used to send mail
 
 app.config.update(
@@ -63,7 +67,29 @@ class Posts(db.Model):
 @app.route("/")
 def Home():
     posts = Posts.query.filter_by().all()
-    return render_template("index.html", params=params, posts = posts)
+    last = math.ceil(len(posts) / int(params['no_of_posts']))
+    page = request.args.get('page')
+    if (not str(page).isnumeric()):
+        page = 1
+    page = int(page)
+    posts = posts[(page - 1) * int(params['no_of_posts']): (page - 1) * int(params['no_of_posts']) + int(
+        params['no_of_posts'])]
+    '''pagination login if page is first prev=0 next=current+1
+    if page is middle prev=current-1,next=current+1
+    if page is last prev=current-1 ,next=0'''
+
+    if (page == 1):
+        prev = "#"
+        next = "/?page=" + str(page + 1)
+    elif (page == last):
+        prev = "/?page=" + str(page - 1)
+        next = "#"
+    else:
+        prev = "/?page=" + str(page - 1)
+        next = "/?page=" + str(page + 1)
+
+
+    return render_template("index.html", params=params, posts = posts, prev=prev, next=next)
 
 
 @app.route("/login", methods = ['GET', 'POST'])
@@ -86,6 +112,28 @@ def login():
 
 
     return render_template("login.html", params=params)
+
+@app.route("/uploader", methods = ['GET', 'POST'])
+def uploader():
+    if ('user' in session and session['user'] == params['admin_user']):
+        if (request.method == 'POST'):
+            f = request.files['file1']
+            f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename) ))
+            return "Uploaded Successfully"
+
+@app.route("/logout")
+def logout():
+    session.pop('user')
+    return redirect("/login")
+
+@app.route("/delete/<string:sno>", methods = ['GET', 'POST'])
+def delete(sno):
+    if ('user' in session and session['user'] == params['admin_user']):
+        post = Posts.query.filter_by(sno=sno).first()
+        db.session.delete(post)
+        db.session.commit()
+    return redirect("/login")
+
 
 
 @app.route("/post/<string:post_slug>", methods = ['GET'])
@@ -127,7 +175,7 @@ def edit(sno):
                 return redirect('/edit/'+sno)
 
         post = Posts.query.filter_by(sno=sno).first()
-        return render_template("edit.html", params=params, post=post)
+        return render_template("edit.html", params=params, post=post, sno=sno)
 
 
 
@@ -155,5 +203,5 @@ def contact():
 
 
 
-
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

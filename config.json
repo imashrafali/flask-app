@@ -13,7 +13,8 @@
      "no_of_posts": 5,
      "login_image": "login.jpg",
      "admin_user": "imashrafali",
-     "admin_password": "!Tj13is009"
+     "admin_password": "!Tj13is009",
+     "upload_file" : "C:\\Users\\ashraf\\Desktop\\pythonprojects\\PycharmProjects\\blogflask\\static"
 
   }
 }
